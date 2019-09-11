@@ -11,6 +11,9 @@ floating window support and you are using Nix/NixOS you have come to the right p
 $ nix-env -i -f https://github.com/gilligan/nix-neovim-nightly/tarball/master
 ```
 
+**NOTE**: neovim is installed as `nvim-nightly` since you might want to install it side by side with
+a stable neovim version.
+
 #### Cachix
 
 You can also make use of [cachix](https://cachix.org) if you want to avoid building anything
