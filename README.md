@@ -8,7 +8,7 @@ floating window support and you are using Nix/NixOS you have come to the right p
 ### Installation
 
 ```
-$ nix-env -iA neovim-nightly -f https://github.com/gilligan/nix-neovim-nightly/tarball/master
+$ nix-env -i -f https://github.com/gilligan/nix-neovim-nightly/tarball/master
 ```
 
 #### Cachix
