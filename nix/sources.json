@@ -1,0 +1,38 @@
+{
+    "neovim": {
+        "branch": "nightly",
+        "description": "Vim-fork focused on extensibility and usability",
+        "homepage": "https://neovim.io",
+        "owner": "neovim",
+        "repo": "neovim",
+        "rev": "853683e72a780afef3ecebd8d46e32983abe1798",
+        "sha256": "1ij8zgrgcdgz3swpwa2qvg7kz8p4asla7szypv86ffz19j8qr3lx",
+        "type": "tarball",
+        "url": "https://github.com/neovim/neovim/archive/853683e72a780afef3ecebd8d46e32983abe1798.tar.gz",
+        "url_template": "https://github.com/<owner>/<repo>/archive/<rev>.tar.gz"
+    },
+    "niv": {
+        "branch": "master",
+        "description": "Easy dependency management for Nix projects",
+        "homepage": "https://github.com/nmattia/niv",
+        "owner": "nmattia",
+        "repo": "niv",
+        "rev": "5e9671a9a87c240b1c6ce981d04ad23ba4291451",
+        "sha256": "08j7msxkv452pyxnh0sgn6h9930i5mk9mszba49bj5401gzmfb8a",
+        "type": "tarball",
+        "url": "https://github.com/nmattia/niv/archive/5e9671a9a87c240b1c6ce981d04ad23ba4291451.tar.gz",
+        "url_template": "https://github.com/<owner>/<repo>/archive/<rev>.tar.gz"
+    },
+    "nixpkgs": {
+        "branch": "feature/nightly-neovim",
+        "description": "Nix Packages collection",
+        "homepage": null,
+        "owner": "rvolosatovs",
+        "repo": "nixpkgs",
+        "rev": "cc7106d6cbf11f291df6d6db7cd162985d450d1a",
+        "sha256": "1jsmb1x52vpl7gn4c8f3xwgfjgwikdbvgp50zr66rlbvwfrarfrv",
+        "type": "tarball",
+        "url": "https://github.com/rvolosatovs/nixpkgs/archive/cc7106d6cbf11f291df6d6db7cd162985d450d1a.tar.gz",
+        "url_template": "https://github.com/<owner>/<repo>/archive/<rev>.tar.gz"
+    }
+}
