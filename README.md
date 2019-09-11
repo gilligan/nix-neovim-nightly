@@ -17,3 +17,8 @@ You can also make use of [cachix](https://cachix.org) if you want to avoid build
 $ cachix use neovim-nightly
 ```
 
+### Notes
+
+This build uses the [this nixpkgs fork](https://github.com/rvolosatovs/nixpkgs/tree/feature/nightly-neovim) mentioned
+in [this nixpkgs issue](https://github.com/NixOS/nixpkgs/issues/64400) since building recent neovim versions from master
+is currently broken on nixpkgs.
