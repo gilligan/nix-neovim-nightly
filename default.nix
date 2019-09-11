@@ -14,4 +14,15 @@ let
     });
   };
 in
-  (import pkgs {config = {}; overlays = [overlay]; }).neovim-nightly
+  let
+    nixpkgs = (import pkgs {config = {}; overlays = [overlay]; });
+  in
+  nixpkgs.stdenv.mkDerivation {
+    pname = "neovim-nightly";
+    version = nvim.rev;
+    buildInputs = [nixpkgs.makeWrapper];
+    buildCommand = ''
+      makeWrapper ${nixpkgs.neovim-nightly}/bin/nvim $out/bin/nvim-nightly
+    '';
+  }
+
