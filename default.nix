@@ -4,7 +4,7 @@
 
 let
   overlay = self: super: {
-    neovim = super.neovim.overrideAttrs (old: {
+    neovim-nightly = super.neovim.overrideAttrs (old: {
       src = self.fetchFromGitHub {
         owner = nvim.owner;
         repo = nvim.repo;
@@ -14,4 +14,6 @@ let
     });
   };
 in
-  (import pkgs {config = {}; overlays = [overlay]; }).neovim
+  {
+    neovim-nightly = (import pkgs {config = {}; overlays = [overlay]; }).neovim-nightly;
+  }
