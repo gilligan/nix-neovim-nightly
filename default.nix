@@ -14,6 +14,4 @@ let
     });
   };
 in
-  {
-    neovim-nightly = (import pkgs {config = {}; overlays = [overlay]; }).neovim-nightly;
-  }
+  (import pkgs {config = {}; overlays = [overlay]; }).neovim-nightly
