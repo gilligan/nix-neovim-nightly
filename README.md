@@ -1,5 +1,7 @@
 ## nix-neovim-nightly
 
+[![Build Status](https://travis-ci.com/gilligan/nix-neovim-nightly.svg?branch=master)](https://travis-ci.com/gilligan/nix-neovim-nightly)
+
 This repository provides a nix package of neovim nightly. If you want to try bleeding edge features like
 floating window support and you are using Nix/NixOS you have come to the right place ;-)
 
